@@ -13,3 +13,39 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://ubank.wizzitcloud.com:9094/#/login')
+
+WebUI.setText(findTestObject('Object Repository/Page_esbCloudPortal/input_Username_input_0 (1)'), 'admin')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_esbCloudPortal/input_Password_input_1 (1)'), 'RigbBhfdqOBGNlJIWM1ClA==')
+
+WebUI.setText(findTestObject('Object Repository/Page_esbCloudPortal/input_Organisation_input_2 (1)'), 'ubank')
+
+WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Login (1)'))
+
+WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Manage Users'))
+
+WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/button_users'))
+
+WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/button_Manage'))
+
+WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Edit User'))
+
+WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Cancel'))
+
+WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Manage (1)'))
+
+WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Add Portal Channel'))
+
+WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Cancel'))
+
+WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Add User'))
+
+WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Johan Vorster (1)'))
+
+WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/button_Logout'))
+
+WebUI.closeBrowser()
+
