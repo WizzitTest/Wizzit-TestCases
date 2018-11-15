@@ -29,11 +29,19 @@ WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Manage Us
 
 WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/button_users'))
 
+WebUI.waitForElementClickable(findTestObject('Page_esbCloudPortal/button_Manage'), 5)
+
 WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/button_Manage'))
 
-WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Edit User'))
+WebUI.waitForElementClickable(findTestObject('Page_esbCloudPortal/span_Edit User'), 5)
 
-WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Cancel'))
+WebUI.doubleClick(findTestObject('Object Repository/Page_esbCloudPortal/span_Edit User'))
+
+WebUI.waitForElementClickable(findTestObject('Page_esbCloudPortal/span_Cancel'), 5)
+
+WebUI.doubleClick(findTestObject('Object Repository/Page_esbCloudPortal/span_Cancel'))
+
+WebUI.waitForElementClickable(findTestObject('Page_esbCloudPortal/span_Manage (1)'), 5)
 
 WebUI.click(findTestObject('Object Repository/Page_esbCloudPortal/span_Manage (1)'))
 
